@@ -1,0 +1,275 @@
+/* CSS files add styling rules to your content */
+
+/*
+* General
+*/
+
+* {
+  box-sizing: content-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif, helvetica;
+  font-size: 18px;
+  color: rgb(73, 73, 73);
+}
+
+/*
+* Headings
+*/
+
+
+h1, h2, h3, h4 {
+  font-weight: normal; 
+}
+
+h1 {
+  font-size: 34px;
+  padding-bottom: 10px;
+  
+}
+
+h2 {
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #666;
+  padding-bottom: 10px;
+  padding-top: 30px; 
+  margin-left: 30px; 
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 16px;
+  padding-bottom: 5px;
+  color: #666;
+  font-weight: bold;
+}
+
+
+
+/*
+*Body
+*/
+
+.section-one {
+  margin: 30px auto; 
+  text-align: center;
+}
+
+.section-two {
+  padding: 30px 50px; 
+  text-align: center;
+  background-color: rgb(47, 57, 114);
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 25px; 
+  margin-right: 25px
+ 
+}
+
+ul li:before {
+  content: '✓  ';
+  color: orange; 
+}
+
+.list-margin {
+  margin: 20px 0;
+}
+
+button {
+  padding: 20px;
+  background-color: orange;
+  border-radius: 10px; 
+  transition: opacity 500ms; 
+  transition: transform 300ms;
+  margin-left: 25px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.section-left {
+  margin: auto;
+  display: flex; 
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; 
+}
+
+.section-four {
+  background-color: rgb(47, 57, 114);
+  display: block; 
+  margin: 0 auto;
+}
+
+.webinar-schedule {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding-top: 50px;
+}
+.calendar {
+  width: 70px;
+  height: 70px;
+  padding-right: 20px; 
+}
+
+.termine {
+  color: white;
+}
+
+.lecturer {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+
+.tamino {
+  width: 90px;
+  height: 90px;
+  padding-right: 20px; 
+}
+
+.webinar-coach   {
+  color: white;
+}
+
+.participants {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding-bottom: 50px;
+}
+.viewer {
+  width: 70px;
+  height: 70px;
+  padding-right: 20px; 
+}
+
+.max-viewer {
+  color: white;
+}
+/*
+* MEDIA
+*/
+
+@media (min-width:700px) {
+
+
+  .section-left {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+ /* .Logo {
+    display:flex;
+    background: rgb(79, 62, 141);
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .background-logo {
+    background-color: white;
+    border-radius: 50%;
+  }
+  */
+  .section-three {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 50px 0px; 
+  }
+  .section-right {
+    width: 50%;
+    text-align: left;
+    margin-top: 20px ;
+    margin-left: 30px;      
+  }
+
+  .section-four {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+  }
+
+  .webinar-schedule {
+    margin: 0; 
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .lecturer {
+    margin: 0px 0px; 
+    padding: 0px 0px ;  
+    padding-right: 10px;
+  }
+
+  .participants {
+    padding-bottom: 0px;
+  }
+
+
+
+
+
+  /*
+    .contact-wrapper {
+    border-top: 4px solid whitesmoke;
+    padding-top: 40px;
+    margin: 0;
+    padding-left: 50px;
+    
+  }
+
+  body {
+    font-family: arial, sans-serif;
+    color: white;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  section.odd {
+    background-color: grey;
+  }
+  
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  */
