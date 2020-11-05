@@ -14,7 +14,7 @@
 body {
   font-family: sans-serif, helvetica;
   font-size: 18px;
-  color: rgb(73, 73, 73);
+  color: rgb(122, 122, 122);
 }
 
 /*
@@ -29,12 +29,15 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 34px;
   padding-bottom: 10px;
+
   
 }
 
 h2 {
   font-size: 26px;
   padding-bottom: 10px;
+  text-align: center; 
+  font-weight: bold;
 }
 
 h3 {
@@ -48,7 +51,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 19px;
   padding-bottom: 5px;
   color: #666;
   font-weight: bold;
@@ -61,12 +64,28 @@ h4 {
 */
 
 .section-one {
-  margin: 30px auto; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto; 
   text-align: center;
+  margin: 15px;
+}
+
+.webinar-icon {
+  width: 50px;
+  height: 5 0px;
+  padding-right: 20px; 
+  padding-top: 0px;
+  transition: transform 300ms ease-in-out;
+}
+
+.webinar-icon:hover{
+  transform: rotate(360deg);
 }
 
 .section-two {
-  padding: 30px 50px; 
+  padding: 30px 30px; 
   text-align: center;
   background-color: rgb(47, 57, 114);
   color: whitesmoke;
@@ -89,21 +108,81 @@ ul li:before {
   margin: 20px 0;
 }
 
-button {
+.first-button {
   padding: 20px;
   background-color: orange;
   border-radius: 10px; 
   transition: opacity 500ms; 
-  transition: transform 300ms;
+  transition: transform 900ms;
   margin-left: 25px;
   margin-top: 10px;
   font-size: 18px;
+  box-shadow: 1px 1px 3px;
+}
+
+
+@keyframes box {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+    background-color: rgb(255, 241, 46);
+  }
+  50% {
+    transform: scale(0.8);
+    background-color: rgb(255, 241, 46);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.first-button.clicked {
+  animation-name: box;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.second-button {
+  background-color: orange;
+  border-radius: 10px; 
+  transition: opacity 500ms; 
+  transition: transform 900ms;
+  font-size: 18px;
+  padding: 20px; 
+  box-shadow: 1px 1px 3px;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+    background-color: rgb(255, 241, 46);
+  }
+  50% {
+    transform: scale(0.8);
+    background-color: rgb(255, 241, 46);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.second-button.clicked {
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 button:hover {
   opacity: 0.8;
   transform: scale(1.1);
 }
+
+
 
 .section-left {
   margin: auto;
@@ -142,13 +221,13 @@ button:hover {
   display: flex; 
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 30px;
 }
 
 
 .tamino {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   padding-right: 20px; 
 }
 
@@ -172,12 +251,133 @@ button:hover {
 .max-viewer {
   color: white;
 }
+
+.section-five-one {
+  display: block;
+  margin: 0 auto;
+}
+
+.learnings {
+  margin: 20px 0px;
+
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  padding-right: 20px; 
+  display: block;
+  margin: 0px auto;
+  transition: transform 200ms ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.relation {
+  max-width: 350px;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  padding-top: 15px; 
+}
+
+
+.section-five-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px; 
+
+}
+
+.webinar-content {
+  padding-top: 30px; 
+  padding-bottom: 30px;
+}
+
+.section-six {
+  background-image: url("https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+.testimonial-text {
+  color: whitesmoke;
+  max-width: 500px;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 3px rgb(58, 58, 58);
+}
+.testimonial-subtext {
+  padding-top: 15px; 
+  color: rgb(170, 170, 170);
+  max-width: 500px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.quotation {
+  width: 90px;
+  height: 90px;
+  padding-right: 20px; 
+  display: block;
+  margin: 0px auto;
+}
+
+
+.portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  margin-bottom: 40px;  
+}
+.about-box {
+  margin: 50px 30px; 
+  padding: 15px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+
+.policy {
+  color: white;
+  transition: opacity 200ms;
+  padding: 20px; 
+}
+
+.policy:hover {
+  opacity: 0.5;
+}
+
+.section-eight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px; 
+  background-color:  rgb(47, 57, 114);
+}
+
 /*
 * MEDIA
 */
 
-@media (min-width:700px) {
+@media (min-width:750px) {
 
+  h2 {
+    margin-top: 50px; 
+  }
 
   .section-left {
     display: flex;
@@ -200,6 +400,17 @@ button:hover {
     border-radius: 50%;
   }
   */
+
+  .section-one {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .webinar-icon {
+    margin-top: 20px;
+  }
+  .section-two{
+    padding: 40px 70px; 
+  }
   .section-three {
     display: flex;
     justify-content: space-between;
@@ -223,7 +434,7 @@ button:hover {
   .webinar-schedule {
     margin: 0; 
     padding-top: 0px;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-left: 20px;
   }
 
@@ -237,39 +448,28 @@ button:hover {
     padding-bottom: 0px;
   }
 
-
-
-
-
-  /*
-    .contact-wrapper {
-    border-top: 4px solid whitesmoke;
-    padding-top: 40px;
-    margin: 0;
-    padding-left: 50px;
-    
-  }
-
-  body {
-    font-family: arial, sans-serif;
-    color: white;
-  }
-  
-  section {
+  .section-five-one {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: black;
+    justify-content: center;
   }
   
-  section.odd {
-    background-color: grey;
-  }
-  
-  h1 {
-    font-size: 40px;
-    text-transform: uppercase;
+  .section-five-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  */
+  #padding {
+    padding: 0px  25px; 
+  }
+
+  .section-seven {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
