@@ -112,12 +112,12 @@ ul li:before {
   padding: 20px;
   background-color: orange;
   border-radius: 10px; 
-  transition: opacity 500ms; 
-  transition: transform 900ms;
-  margin-left: 25px;
+  transition: opacity 300ms; 
+  margin-left: 45px;
   margin-top: 10px;
   font-size: 18px;
   box-shadow: 1px 1px 3px;
+  
 }
 
 
@@ -129,7 +129,7 @@ ul li:before {
     transform: scale(1.2);
     background-color: rgb(255, 241, 46);
   }
-  50% {
+  75% {
     transform: scale(0.8);
     background-color: rgb(255, 241, 46);
   }
@@ -140,15 +140,14 @@ ul li:before {
 
 .first-button.clicked {
   animation-name: box;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
 }
 
 .second-button {
   background-color: orange;
   border-radius: 10px; 
-  transition: opacity 500ms; 
-  transition: transform 900ms;
+  transition: opacity 300ms; 
   font-size: 18px;
   padding: 20px; 
   box-shadow: 1px 1px 3px;
@@ -162,7 +161,7 @@ ul li:before {
     transform: scale(1.2);
     background-color: rgb(255, 241, 46);
   }
-  50% {
+  75% {
     transform: scale(0.8);
     background-color: rgb(255, 241, 46);
   }
@@ -173,7 +172,7 @@ ul li:before {
 
 .second-button.clicked {
   animation-name: animation;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
 }
 
